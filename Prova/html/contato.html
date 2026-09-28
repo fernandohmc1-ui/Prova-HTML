@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Instituição Protetora dos Animais</h1>
+        <h3>Prezando pelo bem-estar animal</h3>
+        <hr>
+        <br>
+    </header>
+
+    <nav>
+        <a href="index.html">Início</a> |
+        <a href="impacto.html">Impacto</a> |
+        <a href="contato.html">Contato</a>
+    </nav>
+    <br>
+    <hr>
+
+    <main>
+
+        <section>
+            <h2>Entre em contato</h2>
+
+            <p>Se você deseja ajudar nossa instituição, adotar um animal,
+                realizar uma doação ou obter mais informações, preencha
+                o formulário abaixo.</p>
+
+            <figure>
+                <img src="../img/animais2.png" alt="Animais acolhidos pela instituição" width="400">
+                <figcaption>
+                    Animais acolhidos pela Instituição Protetora dos Animais.
+                </figcaption>
+            </figure>
+        </section>
+
+        <!-- Tentei deixar o formulário mais completo possível. -->
+        <section>
+            <h2>Formulário de contato</h2>
+
+            <form>
+
+                <p>
+                    <label for="nome">Nome completo:</label><br>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+                </p>
+
+                <p>
+                    <label for="email">E-mail:</label><br>
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                </p>
+
+                <p>
+                    <label for="telefone">Telefone:</label><br>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
+                </p>
+
+                <p>
+                    <label for="data">Data de nascimento:</label><br>
+                    <input type="date" id="data" name="data" required>
+                </p>
+
+                <p>
+                    <label for="assunto">Assunto:</label><br>
+                    <input list="assuntos" id="assunto" name="assunto" placeholder="Escolha ou digite um assunto"
+                        required>
+
+                    <datalist id="assuntos">
+                        <option value="Adoção">
+                        <option value="Doação">
+                        <option value="Voluntariado">
+                        <option value="Resgate de animal">
+                        <option value="Informações">
+                    </datalist>
+                </p>
+
+                <p>
+                    <label for="animal">Animal de interesse:</label><br>
+
+                    <select id="animal" name="animal" required>
+                        <option value="">Selecione uma opção</option>
+                        <option value="cachorro">Cachorro</option>
+                        <option value="gato">Gato</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="experiencia">
+                        Nível de experiência com animais:
+                    </label><br>
+
+                    <input type="range" id="experiencia" name="experiencia" min="0" max="10" value="5">
+
+                    <meter min="0" max="10" value="5">
+                        5 de 10
+                    </meter>
+                </p>
+
+                <p>
+                    <label for="arquivo">
+                        Envie uma foto ou documento, se necessário:
+                    </label><br>
+
+                    <input type="file" id="arquivo" name="arquivo">
+                </p>
+
+                <p>
+                    <label for="mensagem">Mensagem:</label><br>
+
+                    <textarea id="mensagem" name="mensagem" rows="6" cols="40" placeholder="Digite sua mensagem..."
+                        required></textarea>
+                </p>
+
+                <p>
+                    <input type="checkbox" id="termos" name="termos" required>
+
+                    <label for="termos">
+                        Concordo em fornecer meus dados para que a instituição
+                        possa entrar em contato.
+                    </label>
+                </p>
+
+                <p>
+                    <button type="submit">Enviar formulário</button>
+                    <button type="reset">Limpar</button>
+                </p>
+
+            </form>
+        </section>
+
+
+        <section>
+            <h2>Informações importantes</h2>
+
+            <details>
+                <summary>Como funciona a adoção?</summary>
+
+                <p>O processo de adoção busca encontrar uma família responsável
+                    para cada animal. Os interessados passam por uma conversa
+                    com a instituição e recebem orientações sobre os cuidados
+                    necessários.
+                </p>
+            </details>
+
+            <details>
+                <summary>Como posso ser voluntário?</summary>
+
+                <p>Pessoas interessadas em ajudar podem entrar em contato
+                    conosco através do formulário. Existem diferentes formas
+                    de colaborar, como auxiliar na divulgação, arrecadação de
+                    alimentos e cuidados com os animais.</p>
+            </details>
+        </section>
+
+
+        <section>
+            <h2>Ajude um animal</h2>
+
+            <p>Pequenas atitudes podem fazer uma grande diferença.
+                Nosso objetivo é garantir que os animais tenham acesso a
+                alimentação, cuidados veterinários e uma família responsável.
+            </p>
+
+            <p>Atualmente, nossa campanha de arrecadação está
+                <progress value="75" max="100">75%</progress>concluída.
+            </p>
+
+            <p>Meta atual:
+                <meter min="0" max="100" value="75">75%</meter>
+            </p>
+
+            <p>A instituição também recebe doações de ração e materiais. Alguns produtos anteriormente necessários foram
+                <del>retirados da lista de prioridade</del> e outros foram
+                <ins>adicionados como novas necessidades</ins>.
+            </p>
+
+            <p>Para informações importantes, consulte sempre as orientações oficiais da instituição.
+            <mark>O bem-estar dos animais deve ser prioridade.</mark>
+            </p>
+        </section>
+
+
+
+        <section>
+            <h2>Data da prova</h2>
+
+            <p>A avaliação está sendo realizada no dia:
+                <time datetime="28/09/2026">28/09/2026</time>
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <hr>
+        <p>Instituição Protetora dos Animais</p>
+        <p>Página de contato - Trabalho acadêmico de HTML</p>
+        <p>&copy; 2026 - Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+
+</html>
